@@ -1,78 +1,114 @@
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+$dark-color: #5d5d5f;
+$med-color: #dbdbdb;
+$light-color: #dbdbdb;
+$black-color: #1f2021;
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	background-color: #dbdbdb;
-	font-family: 'Open Sans', sans-serif;
-	overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: $light-color;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
-	max-width: 75%;
-	margin: 0 auto;
+  max-width: 75%;
+  margin: 0 auto;
 }
 
 /* start of the nav bar */
 nav {
-	background-color: #dbdbdb;
-	font-size: 1.2rem;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0 12.5rem;
-	position: fixed;
-	margin: 0 auto;
-	width: 100%;
-	z-index: 1;
+  background-color: $light-color;
+  color: $black-color;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12.5rem;
+  position: fixed;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 1;
 
-	.nav-left {
-		display: flex;
+  .nav-left {
+    display: flex;
 
-		.coffee-icon {
-			font-size: 3rem;
-			padding: 0 1rem .5rem 0;
-			margin: auto;
-		}		
-	}
-	.nav-middle ul {
-		display: flex;
+    .coffee-icon {
+      font-size: 3rem;
+      padding: 0 1rem 0.5rem 0;
+      margin: auto;
+    }
+  }
+  .nav-middle ul {
+    display: flex;
 
-		li {
-			list-style: none;
-			padding: 0 2rem;
+    li {
+      list-style: none;
+      padding: 0 2rem;
 
-			.active {
-				font-weight: bold;
-			}
-		}
-	}
-	.nav-right {
-		display: flex;
+      .active {
+        font-weight: bold;
+      }
+    }
+  }
+  .nav-right {
+    display: flex;
 
-		.shopping-icon {
-			border-radius: 50px;
-			cursor: pointer;
-			font-size: 2.25rem;
-			padding: .5rem;
-			margin-left: 1rem;
-			margin-bottom: 0rem;
+    .shopping-icon {
+      border-radius: 50px;
+      cursor: pointer;
+      font-size: 2.25rem;
+      padding: 0.5rem;
+      margin-left: 1rem;
+      margin-bottom: 0rem;
 
-			&:hover {
-				background-color: white;
-			}
-		}
-	}
+      &:hover {
+        background-color: white;
+      }
+    }
+  }
 }
 
 a {
-	color: black;
-	text-decoration: none;
+  color: $black-color;
+  text-decoration: none;
 }
 /* end of the nav bar */
+
+/* Start of Footer Section */
+
+.footer {
+  background-color: $black-color;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  div {
+    margin: 0.5rem auto;
+  }
+
+  div h5 {
+    font-size: 1.2rem;
+    margin: 0.3rem;
+  }
+
+  div p {
+    margin: 0.3rem 0.3rem 0;
+  }
+
+  .socials {
+    font-size: 1.75rem;
+
+    .social {
+      margin: 1.3rem 0.5rem;
+    }
+  }
+}
+
+/* End of Footer Section */

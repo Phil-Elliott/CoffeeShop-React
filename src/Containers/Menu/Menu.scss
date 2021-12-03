@@ -1,0 +1,131 @@
+$dark-color: #5d5d5f;
+$med-color: #dbdbdb;
+$light-color: #dbdbdb;
+$black-color: #1f2021;
+
+.menu-container {
+  padding-top: 11rem;
+  padding-bottom: 4rem;
+}
+
+/* Start of the top section of the menu container*/
+.topMenuContainer {
+  background-color: $dark-color;
+  border-radius: 3px;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 60vh;
+  width: 100%;
+
+  .menuTopLeft {
+    font-size: 1.25rem;
+    padding: 2rem;
+    max-width: 85%;
+    margin: 1rem auto 0;
+
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      padding-top: 1rem;
+      text-indent: 30px;
+    }
+    .buttons {
+      display: flex;
+      font-weight: bold;
+      padding-top: 1rem;
+
+      .button {
+        padding-right: 2rem;
+        transform: skew(-10deg);
+
+        button {
+          background-color: $light-color;
+          border: 1px solid $light-color;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 1.25rem;
+          padding: 0.5rem 1rem;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+  .menuTopRight {
+    .imageContain {
+      display: block;
+      object-fit: cover;
+      height: 60vh;
+      width: 100%;
+    }
+  }
+}
+/* End of the top section of the menu container*/
+
+/* Start of the bottom section of the menu container*/
+.bottom-menu-container {
+  background-color: $dark-color;
+  color: white;
+  padding: 2rem;
+  margin-top: 10rem;
+
+  .menuHeading {
+    text-align: center;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 40%;
+      padding: 2rem 0;
+      margin: 0 auto;
+
+      li {
+        font-size: 1rem;
+        display: flex;
+        list-style: none;
+        margin: 0rem;
+        opacity: 70%;
+      }
+      .active1 {
+        background-color: $light-color;
+        border: 1px solid $light-color;
+        border-radius: 5px;
+        color: black;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+  .item-container {
+    margin: 0 auto;
+    max-width: 85%;
+    padding-top: 0rem;
+
+    .itemTop {
+      display: flex;
+      justify-content: space-between;
+
+      .dotLine {
+        border-bottom: dotted 3px white;
+        margin-bottom: 24px;
+        width: 470px;
+      }
+    }
+    .itemBottom {
+      p {
+        opacity: 70%;
+        margin-top: 0;
+      }
+    }
+  }
+}

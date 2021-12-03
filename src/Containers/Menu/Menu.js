@@ -1,11 +1,15 @@
-import React from 'react'
+import React from "react"
+import "./Menu.scss"
+import MenuTop from "./MenuTop"
+import MenuBottom from "./MenuBottom"
 
 const Menu = () => {
-	return (
-		<div>
-			
-		</div>
-	)
+  return (
+    <div className="container menu-container">
+      <MenuTop />
+      <MenuBottom />
+    </div>
+  )
 }
 
-export default Menu 
+export default Menu
