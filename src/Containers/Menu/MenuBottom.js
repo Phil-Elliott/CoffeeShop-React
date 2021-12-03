@@ -51,27 +51,27 @@ const MenuBottom = () => {
   const teaArray = [
     {
       item: "Green Tea",
-      price: "$2.50",
+      price: "$1.50",
       description: "Mix it up with this classic",
     },
     {
       item: "Black Tea",
-      price: "$3.00",
+      price: "$1.60",
       description: "Tired of coffee, but need some energy",
     },
     {
       item: "Fruit Tea",
-      price: "$2.80",
+      price: "$1.80",
       description: "Be sure to add some honey",
     },
     {
       item: "Milk Tea",
-      price: "$2.50",
+      price: "$2.25",
       description: "Perfect for a hot day",
     },
     {
       item: "Green Tea Latte",
-      price: "$3.75",
+      price: "$2.75",
       description: "What a great combination",
     },
   ]
@@ -95,7 +95,7 @@ const MenuBottom = () => {
   const dessertArray = [
     {
       item: "Cake",
-      price: "1.60",
+      price: "$1.60",
       description: "Not just for birthdays",
     },
     {
@@ -115,6 +115,7 @@ const MenuBottom = () => {
     },
   ]
 
+  // Changes the list displayed on the menu
   const changeList = (name) => {
     if (name === "coffee") {
       setList(coffeeArray)
@@ -127,10 +128,12 @@ const MenuBottom = () => {
     }
   }
 
+  // Shows the active button for the menu display
   const changeActive = (name) => {
     setActive(name)
   }
 
+  //Start the page with the coffee menu display
   useEffect(() => {
     changeList("coffee")
   }, [])
@@ -140,17 +143,37 @@ const MenuBottom = () => {
       <div className="menuHeading">
         <h1>Our Menu</h1>
         <ul>
-          <li className={active} onClick={() => changeList("coffee")}>
-            <span onClick={() => changeActive("active1")}>Coffee</span>
+          <li onClick={() => changeList("coffee")}>
+            <span
+              className={active === "active1" ? "active" : "none"}
+              onClick={() => changeActive("active1")}
+            >
+              Coffee
+            </span>
           </li>
           <li onClick={() => changeList("tea")}>
-            <span onClick={() => changeActive("active2")}>Tea</span>
+            <span
+              className={active === "active2" ? "active" : "none"}
+              onClick={() => changeActive("active2")}
+            >
+              Tea
+            </span>
           </li>
           <li onClick={() => changeList("other")}>
-            <span onClick={() => changeActive("active3")}>Other</span>
+            <span
+              className={active === "active3" ? "active" : "none"}
+              onClick={() => changeActive("active3")}
+            >
+              Other
+            </span>
           </li>
           <li onClick={() => changeList("dessert")}>
-            <span onClick={() => changeActive("active4")}>Dessert</span>
+            <span
+              className={active === "active4" ? "active" : "none"}
+              onClick={() => changeActive("active4")}
+            >
+              Dessert
+            </span>
           </li>
         </ul>
       </div>
