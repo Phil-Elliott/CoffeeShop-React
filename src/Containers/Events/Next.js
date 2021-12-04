@@ -1,6 +1,13 @@
 const Next = () => {
   return (
-    <div className="topMenuContainer topNextContainer">
+    <div className="topMenuContainer topNextContainer container">
+      <div className="menuTopRight">
+        <img
+          className="imageContain"
+          src="https://images.unsplash.com/photo-1606509036992-4399d5c5afe4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          alt="Coffee"
+        />
+      </div>
       <div className="menuTopLeft">
         <h2>Events</h2>
         <p>
@@ -17,13 +24,6 @@ const Next = () => {
             </button>
           </div>
         </div>
-      </div>
-      <div className="menuTopRight">
-        <img
-          className="imageContain"
-          src="https://images.unsplash.com/photo-1606509036992-4399d5c5afe4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-          alt="Coffee"
-        />
       </div>
     </div>
   )

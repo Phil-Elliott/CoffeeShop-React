@@ -1,3 +1,6 @@
+$box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+  rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 $dark-color: #5d5d5f;
 $med-color: #dbdbdb;
 $light-color: #dbdbdb;
@@ -5,4 +8,15 @@ $black-color: #1f2021;
 
 .eventsContainer {
   padding-top: 11rem;
+}
+
+.topNextContainer {
+  box-shadow: $box-shadow;
+}
+
+.events-bottom {
+  background-color: $dark-color;
+  box-shadow: $box-shadow;
+  margin-top: 7rem;
+  padding: 7rem 0;
 }

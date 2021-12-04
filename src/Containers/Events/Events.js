@@ -5,7 +5,7 @@ import Upcoming from "./Upcoming.js"
 
 const Events = () => {
   return (
-    <div className="eventsContainer container">
+    <div className="eventsContainer">
       <Next />
       <Upcoming />
     </div>
