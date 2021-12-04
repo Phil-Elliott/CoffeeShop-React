@@ -267,26 +267,31 @@ $black-color: #1f2021;
 /* start of the reviews section */
 #reviews {
   background-color: $dark-color;
-  position: relative;
   margin: 0 auto;
   font-size: 2rem;
   padding: 5rem 0;
-  overflow: hidden;
-  height: 24rem;
 
   .slider {
-    position: absolute;
-    display: grid;
-    grid-template-columns: 100vw 100vw 100vw;
-    right: 0;
-    transition: right 1s ease-in-out;
-    padding-bottom: 5rem;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 45vw;
 
+    .clickers {
+      cursor: pointer;
+      font-size: 4rem;
+      opacity: 0.1;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
     .review {
       box-shadow: $box-shadow;
-      width: 40%;
+      height: 33vh;
+      width: 40vw;
       background-color: $light-color;
-      color: $dark-color;
+      color: $black-color;
       padding: 2rem 2rem 0;
       border-radius: 2px;
       margin: 0 auto;
