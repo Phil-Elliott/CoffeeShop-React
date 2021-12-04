@@ -20,26 +20,30 @@ const About = () => {
             <h3>Our Brew Methods</h3>
             <div className="pics">
               <div className="left-pic">
-                <img src="https://images.unsplash.com/photo-1545665206-b3e63670666e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80" />
-                <h5>Traditional</h5>
-                <p>
-                  Sometimes the best results come from the simplest actions.
-                </p>
+                <div className="writing-container">
+                  <h5>Traditional</h5>
+                  <p>
+                    Sometimes the best results come from the simplest actions.
+                  </p>
+                </div>
               </div>
-              <div className="left-pic">
-                <img src="https://images.unsplash.com/photo-1545665225-b23b99e4d45e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1177&q=80" />
-                <h5>Drip</h5>
-                <p>
-                  Perfect for someone who wants more caffeine and a vibrant
-                  taste.
-                </p>
+              <div className="middle-pic">
+                <div className="writing-container">
+                  <h5>Drip</h5>
+                  <p>
+                    Perfect for someone who wants more caffeine and a vibrant
+                    taste.
+                  </p>
+                </div>
               </div>
-              <div className="left-pic">
-                <img src="https://images.unsplash.com/photo-1570470752028-7b2cd13f44a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80" />
-                <h5>Cold Brew</h5>
-                <p>
-                  Great for a hot day and for those who want something sweeter.
-                </p>
+              <div className="right-pic">
+                <div className="writing-container">
+                  <h5>Cold Brew</h5>
+                  <p>
+                    Great for a hot day and for those who want something
+                    sweeter.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
