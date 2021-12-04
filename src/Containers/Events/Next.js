@@ -8,22 +8,15 @@ const Next = () => {
           alt="Coffee"
         />
       </div>
-      <div className="menuTopLeft">
-        <h2>Events</h2>
+      <div className="menuTopLeft" style={{ fontSize: "1.5rem" }}>
+        <h2 style={{ margin: "0" }}>
+          <span className="event-header">Events</span>
+        </h2>
         <p>
-          We have a diffirent event every day of the week. Come and enjoy
+          We have a different event every day of the week. Come and enjoy
           yourself with one of our delicous coffees. Tickets do go fast, so be
           sure to reserve a seat.
         </p>
-        <div className="buttons">
-          <div className="button">
-            <button>
-              <a style={{ color: "black" }} href="#">
-                Sun | Mon | Tues | Wed | Thu | Fri | Sat
-              </a>
-            </button>
-          </div>
-        </div>
       </div>
     </div>
   )
