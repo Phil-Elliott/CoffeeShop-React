@@ -6,12 +6,21 @@ import Home from "./Containers/Home/Home"
 import Events from "./Containers/Events/Events"
 import Menu from "./Containers/Menu/Menu"
 import Shop from "./Containers/Shop/Shop"
+import Cart from "./Containers/Cart/Cart"
 
 const App = () => {
   const [page, setPage] = useState("home")
+  const [cartItems, setCartItems] = useState([])
 
+  // Used to change content on the page
   const changePage = (name) => {
     setPage(name)
+  }
+
+  // Used to add items to the cart
+  const addCartItems = (details) => {
+    setCartItems([...cartItems, details])
+    console.log(cartItems)
   }
 
   return (
@@ -22,9 +31,11 @@ const App = () => {
       ) : page === "events" ? (
         <Events />
       ) : page === "shop" ? (
-        <Shop />
-      ) : (
+        <Shop addCartItems={addCartItems} />
+      ) : page === "menu" ? (
         <Menu />
+      ) : (
+        <Cart cartItems={cartItems} />
       )}
       <Footer />
     </div>

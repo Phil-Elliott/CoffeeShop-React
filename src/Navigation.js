@@ -60,7 +60,10 @@ const Navigation = ({ changePage }) => {
           <a href="#" className="link" style={{ marginTop: ".2rem" }}>
             Sign In
           </a>
-          <FaShoppingBag className="shopping-icon" />
+          <FaShoppingBag
+            className="shopping-icon"
+            onClick={() => changePage("cart")}
+          />
         </div>
       </nav>
     </div>

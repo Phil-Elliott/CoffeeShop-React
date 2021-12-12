@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import Card from "./Card"
 
-const Items = ({ newArr }) => {
+const Items = ({ newArr, addCartItems }) => {
   return (
     <div className="item-cards">
       {newArr.map((entry, i) => {
@@ -12,6 +12,7 @@ const Items = ({ newArr }) => {
             description={newArr[i].description}
             price={newArr[i].price}
             group={newArr[i].group}
+            addCartItems={addCartItems}
           />
         )
       })}

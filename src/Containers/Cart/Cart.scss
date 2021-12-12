@@ -1,0 +1,15 @@
+$box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+  rgba(17, 17, 26, 0.1) 0px 0px 8px;
+$dark-color: #5d5d5f;
+$med-color: #dbdbdb;
+$light-color: #dbdbdb;
+$black-color: #1f2021;
+
+.cart-container {
+  padding: 8rem 0;
+
+  .cart-headers {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+  }
+}

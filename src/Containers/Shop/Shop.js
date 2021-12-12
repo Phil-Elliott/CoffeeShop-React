@@ -4,7 +4,7 @@ import Header from "./Header"
 import ShopNav from "./ShopNav"
 import Items from "./Items"
 
-const Shop = () => {
+const Shop = ({ addCartItems }) => {
   const [headerName, setHeaderName] = useState("All Items")
   const [active, setActive] = useState("All Items")
   const [newArr, setNewArr] = useState([
@@ -324,7 +324,7 @@ const Shop = () => {
         <div>
           <ShopNav changeArr={changeArr} active={active} />
         </div>
-        <Items newArr={newArr} />
+        <Items newArr={newArr} addCartItems={addCartItems} />
       </div>
     </div>
   )
