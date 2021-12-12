@@ -1,0 +1,121 @@
+$box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+  rgba(17, 17, 26, 0.1) 0px 0px 8px;
+$dark-color: #5d5d5f;
+$med-color: #dbdbdb;
+$light-color: #dbdbdb;
+$black-color: #1f2021;
+
+.shop-container {
+  padding: 5rem 0;
+}
+
+.header-container {
+  .header-tittle {
+    border-bottom: 1.5px solid $dark-color;
+    font-size: 3rem;
+    margin-bottom: 0;
+    padding: 1rem 0;
+    text-align: center;
+  }
+}
+
+.shop-main {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  padding: 2rem 0;
+}
+
+.shopNav {
+  border-right: $dark-color 1.5px solid;
+  width: 75%;
+
+  p {
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: 0.35rem 0;
+    text-transform: uppercase;
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
+}
+
+.item-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 80px;
+
+  .item-card {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: $box-shadow;
+    width: 110%;
+    transition: transform 0.5s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    .card-top {
+      background-repeat: no-repeat;
+      border-radius: 3px;
+      height: 45vh;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      width: 80%;
+
+      .item-img-container {
+        img {
+          height: 25vh;
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+    .card-bottom {
+      height: 17vh;
+      width: 100%;
+      padding: 5px;
+
+      h3 {
+        margin: 0 0.75rem;
+
+        text-align: left;
+      }
+      .card-description {
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+        font-size: 1.25rem;
+        padding: 0.75rem 0;
+      }
+
+      .buy-item {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0.5rem;
+        padding-right: 0.75rem;
+        .card-price {
+          font-size: 1rem;
+          opacity: 0.7;
+        }
+        button {
+          background-color: $dark-color;
+          border-radius: 3px;
+          box-shadow: $box-shadow;
+          color: white;
+          cursor: pointer;
+          padding: 0.25rem 2rem;
+
+          &:hover {
+            opacity: 0.85;
+          }
+        }
+      }
+    }
+  }
+}
+.activeShop {
+  font-weight: bolder;
+}

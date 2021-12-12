@@ -5,6 +5,7 @@ import Footer from "./Footer"
 import Home from "./Containers/Home/Home"
 import Events from "./Containers/Events/Events"
 import Menu from "./Containers/Menu/Menu"
+import Shop from "./Containers/Shop/Shop"
 
 const App = () => {
   const [page, setPage] = useState("home")
@@ -16,7 +17,15 @@ const App = () => {
   return (
     <div>
       <Navigation changePage={changePage} />
-      {page === "home" ? <Home /> : page === "events" ? <Events /> : <Menu />}
+      {page === "home" ? (
+        <Home />
+      ) : page === "events" ? (
+        <Events />
+      ) : page === "shop" ? (
+        <Shop />
+      ) : (
+        <Menu />
+      )}
       <Footer />
     </div>
   )

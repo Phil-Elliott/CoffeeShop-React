@@ -45,6 +45,15 @@ const Navigation = ({ changePage }) => {
                 Menu
               </a>
             </li>
+            <li onClick={() => changeActive("active4")}>
+              <a
+                href="#"
+                onClick={() => changePage("shop")}
+                className={active === "active4" ? "active" : "none"}
+              >
+                Shop
+              </a>
+            </li>
           </ul>
         </div>
         <div className="nav-right">

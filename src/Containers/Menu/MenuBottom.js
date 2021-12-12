@@ -139,7 +139,7 @@ const MenuBottom = () => {
   }, [])
 
   return (
-    <div className="bottom-menu-container">
+    <div className="bottom-menu-container" id="menu">
       <div className="menuHeading">
         <h1>Our Menu</h1>
         <ul>
