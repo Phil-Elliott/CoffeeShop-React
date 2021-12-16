@@ -2,9 +2,11 @@ import React, { useState } from "react"
 import { FaMugHot } from "react-icons/fa"
 import { Badge } from "@material-ui/core"
 import { ShoppingBasket } from "@mui/icons-material"
+import useStyles from "./Styles"
 
 const Navigation = ({ changePage }) => {
   const [active, setActive] = useState("active1")
+  const classes = useStyles()
 
   // Shows the active button for the menu display
   const changeActive = (name) => {
@@ -15,7 +17,6 @@ const Navigation = ({ changePage }) => {
     <div>
       <nav className="nav-container">
         <div className="nav-left">
-          <FaMugHot className="coffee-icon nav-icon" />
           <h1>Quick Brew</h1>
         </div>
         <div className="nav-middle">
@@ -59,7 +60,7 @@ const Navigation = ({ changePage }) => {
           </ul>
         </div>
         <div className="nav-right">
-          <Badge badgeContent={4}>
+          <Badge className={classes.badge} badgeContent={4}>
             <ShoppingBasket
               className="shopping-icon"
               onClick={() => changePage("cart")}

@@ -35,6 +35,7 @@ $black-color: #1f2021;
       h1 {
         font-size: 3rem;
         line-height: 80px;
+        margin: 20px;
         text-align: center;
       }
 
@@ -293,11 +294,12 @@ $black-color: #1f2021;
       }
     }
     .review {
+      border: $dark-color solid 3px;
       box-shadow: $box-shadow;
       height: 36vh;
       width: 55vw;
-      background-color: $dark-color;
-      color: white;
+      //background-color: $dark-color;
+      //color: white;
       padding: 2rem 2rem 0;
       border-radius: 2px;
       margin: 0 auto;
