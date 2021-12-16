@@ -44,8 +44,8 @@ nav {
     display: flex;
 
     .coffee-icon {
-      font-size: 3rem;
-      padding: 0 1rem 0.5rem 0;
+      font-size: 2.5rem;
+      padding: 0 0.75rem 0.3rem 0;
       margin: auto;
     }
   }
@@ -54,7 +54,7 @@ nav {
 
     li {
       list-style: none;
-      padding: 0 2rem;
+      margin: 0 2rem;
 
       &:hover {
         font-weight: bold;
@@ -71,8 +71,8 @@ nav {
     .shopping-icon {
       border-radius: 50px;
       cursor: pointer;
-      font-size: 2.25rem;
-      padding: 0.5rem;
+      font-size: 2rem;
+      padding: 0.25rem;
       margin-left: 1rem;
       margin-bottom: 0rem;
 
@@ -87,6 +87,7 @@ a {
   color: $black-color;
   text-decoration: none;
 }
+
 /* end of the nav bar */
 
 /* Start of Footer Section */

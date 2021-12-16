@@ -1,13 +1,20 @@
-import React from "react"
+import React, { useState } from "react"
 import "./Cart.scss"
 import CartItem from "./CartItem"
 
 const Cart = ({ cartItems }) => {
+  const [subtotal, setSubtotal] = useState(0.0)
+
+  // Used to get the subtotal for all of the items
+  const changeSubtotal = (total) => {
+    setSubtotal(subtotal + total)
+  }
+
   return (
     <div className="container cart-container">
-      <h1>Shopping Cart</h1>
+      <h2>Shopping Cart</h2>
       <div className="cart-headers">
-        <p>Item</p>
+        <p style={{ textAlign: "left" }}>Item</p>
         <p>Quanity</p>
         <p>Price</p>
       </div>
@@ -19,21 +26,18 @@ const Cart = ({ cartItems }) => {
               picture={cartItems[i].picture}
               description={cartItems[i].description}
               price={cartItems[i].price}
+              changeSubtotal={changeSubtotal}
             />
           )
         })}
       </div>
+      <div className="subtotal">
+        <h4>Subtotal</h4>
+        <h4>${subtotal.toFixed(2)}</h4>
+      </div>
+      <button>Checkout</button>
     </div>
   )
 }
 
 export default Cart
-
-/*
-  
-  Have the buy button on the shop page add the item to the cart page 
-    maybe have it trigger a function on the main page that sets some data
-    need to pass through the part of the array 
-      maybe do it through the map item (have each one have the function that triggers when clicked)
-    have the subtotal use a function that gets the total of the prices through the array 
-*/

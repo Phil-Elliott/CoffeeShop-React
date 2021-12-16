@@ -1,7 +1,7 @@
 import React from "react"
 import Item from "./Item"
 
-const CoffeeMenu = ({ list }) => {
+const ItemsMenu = ({ list }) => {
   return (
     <div className="item-container">
       {list.map((entry, i) => {
@@ -18,10 +18,4 @@ const CoffeeMenu = ({ list }) => {
   )
 }
 
-export default CoffeeMenu
-
-/*
-  - Have menu change on click 
-  - add an active class to each button 
-  - make it the same as the other buttons 
-*/
+export default ItemsMenu

@@ -1,7 +1,7 @@
 import React from "react"
 import Event from "./Event"
 
-const Upcoming = () => {
+const BottomEvents = () => {
   const eventsArr = [
     {
       time: "Monday's All Day",
@@ -72,7 +72,7 @@ const Upcoming = () => {
   )
 }
 
-export default Upcoming
+export default BottomEvents
 
 /*
   - create an array with the data needed

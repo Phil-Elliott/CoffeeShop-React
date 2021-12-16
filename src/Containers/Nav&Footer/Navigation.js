@@ -1,5 +1,7 @@
 import React, { useState } from "react"
-import { FaMugHot, FaShoppingBag } from "react-icons/fa"
+import { FaMugHot } from "react-icons/fa"
+import { Badge } from "@material-ui/core"
+import { ShoppingBasket } from "@mui/icons-material"
 
 const Navigation = ({ changePage }) => {
   const [active, setActive] = useState("active1")
@@ -57,13 +59,12 @@ const Navigation = ({ changePage }) => {
           </ul>
         </div>
         <div className="nav-right">
-          <a href="#" className="link" style={{ marginTop: ".2rem" }}>
-            Sign In
-          </a>
-          <FaShoppingBag
-            className="shopping-icon"
-            onClick={() => changePage("cart")}
-          />
+          <Badge badgeContent={4}>
+            <ShoppingBasket
+              className="shopping-icon"
+              onClick={() => changePage("cart")}
+            />
+          </Badge>
         </div>
       </nav>
     </div>

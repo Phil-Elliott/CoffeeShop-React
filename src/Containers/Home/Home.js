@@ -1,9 +1,9 @@
 import React from "react"
 import "./Home.scss"
-import Top from "./Top"
-import About from "./About"
-import Area from "./Area"
-import Reviews from "./Reviews"
+import Top from "./Content/Top"
+import About from "./Content/About"
+import Area from "./Content/Area"
+import Reviews from "./Content/Reviews/Reviews"
 
 const Home = () => {
   return (

@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import "./App.scss"
-import Navigation from "./Navigation"
-import Footer from "./Footer"
+import Navigation from "./Containers/Nav&Footer/Navigation"
+import Footer from "./Containers/Nav&Footer/Footer"
 import Home from "./Containers/Home/Home"
 import Events from "./Containers/Events/Events"
 import Menu from "./Containers/Menu/Menu"
@@ -20,7 +20,6 @@ const App = () => {
   // Used to add items to the cart
   const addCartItems = (details) => {
     setCartItems([...cartItems, details])
-    console.log(cartItems)
   }
 
   return (

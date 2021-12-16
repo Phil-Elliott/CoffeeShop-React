@@ -12,7 +12,7 @@ const Review = ({ text, user, changeReviewRight, changeReviewLeft }) => {
             onClick={changeReviewLeft}
           />
           <div class="review">
-            <h5>{text}</h5>
+            <p>{text}</p>
             <div class="user">
               <FaUser style={{ margin: "auto 0", paddingRight: "1rem" }} />
               <h5>{user}</h5>

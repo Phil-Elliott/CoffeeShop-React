@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import CoffeeMenu from "./CoffeeMenu"
+import ItemsMenu from "./ItemsMenu"
 
 const MenuBottom = () => {
   const [list, setList] = useState([])
@@ -177,7 +177,7 @@ const MenuBottom = () => {
           </li>
         </ul>
       </div>
-      <CoffeeMenu list={list} />
+      <ItemsMenu list={list} />
     </div>
   )
 }

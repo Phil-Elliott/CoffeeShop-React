@@ -12,7 +12,7 @@ const Card = ({ picture, description, price, addCartItems }) => {
         <div className="card-bottom">
           <h3 className="card-description">{description}</h3>
           <div className="buy-item">
-            <h3 className="card-price">{price}</h3>
+            <h3 className="card-price">${price}</h3>
             <button
               onClick={() => addCartItems({ picture, price, description })}
             >

@@ -4,6 +4,7 @@ import Review from "./Review"
 const Reviews = () => {
   const [rev, setRev] = useState(0)
 
+  // Sets reviews back to the first review
   const changeReviewRight = () => {
     if (rev > 3) {
       setRev(0)
@@ -12,6 +13,7 @@ const Reviews = () => {
     }
   }
 
+  // Set reviews to the last review
   const changeReviewLeft = () => {
     if (rev < 0) {
       setRev(3)
@@ -20,6 +22,7 @@ const Reviews = () => {
     }
   }
 
+  // Array of reviews to display at the bottom of the home page
   const reviewArray = [
     {
       text: "We had such a great time at Quick Brew. The staff were very nice and the prices were also very good.",

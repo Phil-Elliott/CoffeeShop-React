@@ -1,4 +1,4 @@
-const Next = () => {
+const Top = () => {
   return (
     <div className="topMenuContainer topNextContainer container">
       <div className="menuTopRight">
@@ -22,4 +22,4 @@ const Next = () => {
   )
 }
 
-export default Next
+export default Top

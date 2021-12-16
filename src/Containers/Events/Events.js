@@ -1,13 +1,13 @@
 import React from "react"
 import "./Events.scss"
-import Next from "./Next.js"
-import Upcoming from "./Upcoming.js"
+import Top from "./Top.js"
+import BottomEvents from "./BottomEvents/BottomEvents.js"
 
 const Events = () => {
   return (
     <div className="eventsContainer">
-      <Next />
-      <Upcoming />
+      <Top />
+      <BottomEvents />
     </div>
   )
 }

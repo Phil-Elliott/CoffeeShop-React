@@ -1,7 +1,7 @@
 import React from "react"
 import "./Menu.scss"
 import MenuTop from "./MenuTop"
-import MenuBottom from "./MenuBottom"
+import MenuBottom from "./MenuBottom/MenuBottom"
 
 const Menu = () => {
   return (
