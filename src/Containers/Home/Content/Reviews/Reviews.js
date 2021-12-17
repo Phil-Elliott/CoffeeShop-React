@@ -15,7 +15,7 @@ const Reviews = () => {
 
   // Set reviews to the last review
   const changeReviewLeft = () => {
-    if (rev < 0) {
+    if (rev < 1) {
       setRev(3)
     } else {
       setRev(rev - 1)

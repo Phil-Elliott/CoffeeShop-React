@@ -1,39 +1,30 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import { FaTimes, FaPlus, FaMinus } from "react-icons/fa"
 
-const CartItem = ({ picture, description, price, changeSubtotal }) => {
-  const [quantity, setQuantity] = useState("1")
-
-  // Changes the quantity of an item by clicking
-  const changeQuantity = (action) => {
-    if (action === "add") {
-      setQuantity(Number(quantity) + 1)
-    } else if (action === "minus") {
-      setQuantity(Number(quantity) - 1)
-    }
-  }
-
-  // Changes the subtotal everytime the quantity changes
-  useEffect(() => {
-    changeSubtotal(Number(price))
-  }, [quantity])
-
+const CartItem = ({ item, handleUpdateCartQty, handleRemoveFromCart }) => {
+  console.log(item)
   return (
     <div className="cart-item">
       <div cart-left>
-        <FaTimes className="cart-icons" />
-        <img src={picture} alt="pic" />
-        <p>{description}</p>
+        <FaTimes
+          className="cart-icons"
+          onClick={() => handleRemoveFromCart(item.id)}
+        />
+        <img src={item.image.url} alt="pic" />
+        <p>{item.name}</p>
       </div>
       <div className="quantity">
         <FaMinus
           className="cart-icons"
-          onClick={() => changeQuantity("minus")}
+          onClick={() => handleUpdateCartQty(item.id, item.quantity - 1)}
         />
-        <p>{quantity}</p>
-        <FaPlus className="cart-icons" onClick={() => changeQuantity("add")} />
+        <p>{item.quantity}</p>
+        <FaPlus
+          className="cart-icons"
+          onClick={() => handleUpdateCartQty(item.id, item.quantity + 1)}
+        />
       </div>
-      <p>${(price * quantity).toFixed(2)}</p>
+      <p>{item.line_total.formatted_with_symbol}</p>
     </div>
   )
 }

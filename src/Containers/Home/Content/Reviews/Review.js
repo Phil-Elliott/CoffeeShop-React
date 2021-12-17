@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { FaUser, FaAngleLeft, FaAngleRight } from "react-icons/fa"
 
 const Review = ({ text, user, changeReviewRight, changeReviewLeft }) => {

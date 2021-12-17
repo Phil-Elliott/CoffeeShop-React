@@ -1,20 +1,11 @@
 import React, { useState } from "react"
 import Card from "./Card"
 
-const Items = ({ newArr, addCartItems }) => {
+const Items = ({ display, onAddToCart }) => {
   return (
     <div className="item-cards">
-      {newArr.map((entry, i) => {
-        return (
-          <Card
-            key={i}
-            picture={newArr[i].picture}
-            description={newArr[i].description}
-            price={newArr[i].price}
-            group={newArr[i].group}
-            addCartItems={addCartItems}
-          />
-        )
+      {display.map((product) => {
+        return <Card product={product} onAddToCart={onAddToCart} />
       })}
     </div>
   )
@@ -28,4 +19,15 @@ export default Items
 
   if name = all return all 
   else filter by name 
+
+  return (
+          <Card
+            key={i}
+            picture={products[i].picture}
+            description={products[i].description}
+            price={products[i].price}
+            group={products[i].group}
+            addCartItems={addCartItems}
+          />
+        )
 */

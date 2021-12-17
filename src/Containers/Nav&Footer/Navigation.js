@@ -1,10 +1,10 @@
 import React, { useState } from "react"
-import { FaMugHot } from "react-icons/fa"
 import { Badge } from "@material-ui/core"
 import { ShoppingBasket } from "@mui/icons-material"
 import useStyles from "./Styles"
+import { Link } from "react-router-dom"
 
-const Navigation = ({ changePage }) => {
+const Navigation = ({ totalItems }) => {
   const [active, setActive] = useState("active1")
   const classes = useStyles()
 
@@ -22,49 +22,41 @@ const Navigation = ({ changePage }) => {
         <div className="nav-middle">
           <ul>
             <li onClick={() => changeActive("active1")}>
-              <a
-                href="#"
-                className={active === "active1" ? "active" : "none"}
-                onClick={() => changePage("home")}
-              >
+              <Link className={active === "active1" ? "active" : "none"} to="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li onClick={() => changeActive("active2")}>
-              <a
-                href="#"
-                onClick={() => changePage("events")}
+              <Link
                 className={active === "active2" ? "active" : "none"}
+                to="/Events"
               >
                 Events
-              </a>
+              </Link>
             </li>
             <li onClick={() => changeActive("active3")}>
-              <a
-                href="#"
-                onClick={() => changePage("menu")}
+              <Link
                 className={active === "active3" ? "active" : "none"}
+                to="/Menu"
               >
                 Menu
-              </a>
+              </Link>
             </li>
             <li onClick={() => changeActive("active4")}>
-              <a
-                href="#"
-                onClick={() => changePage("shop")}
+              <Link
                 className={active === "active4" ? "active" : "none"}
+                to="/Shop"
               >
                 Shop
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
         <div className="nav-right">
-          <Badge className={classes.badge} badgeContent={4}>
-            <ShoppingBasket
-              className="shopping-icon"
-              onClick={() => changePage("cart")}
-            />
+          <Badge className={classes.badge} badgeContent={totalItems}>
+            <Link onClick={() => changeActive("active5")} to="/Cart">
+              <ShoppingBasket className="shopping-icon" />
+            </Link>
           </Badge>
         </div>
       </nav>

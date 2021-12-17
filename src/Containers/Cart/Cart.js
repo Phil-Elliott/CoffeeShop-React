@@ -1,15 +1,9 @@
 import React, { useState } from "react"
 import "./Cart.scss"
 import CartItem from "./CartItem"
+import { Link } from "react-router-dom"
 
-const Cart = ({ cartItems }) => {
-  const [subtotal, setSubtotal] = useState(0.0)
-
-  // Used to get the subtotal for all of the items
-  const changeSubtotal = (total) => {
-    setSubtotal(subtotal + total)
-  }
-
+const Cart = ({ cartProducts, handleUpdateCartQty, handleRemoveFromCart }) => {
   return (
     <div className="container cart-container">
       <h2>Shopping Cart</h2>
@@ -19,23 +13,24 @@ const Cart = ({ cartItems }) => {
         <p>Price</p>
       </div>
       <div className="cart-items">
-        {cartItems.map((entry, i) => {
+        {cartProducts.line_items.map((item) => {
           return (
             <CartItem
-              key={i}
-              picture={cartItems[i].picture}
-              description={cartItems[i].description}
-              price={cartItems[i].price}
-              changeSubtotal={changeSubtotal}
+              item={item}
+              key={item.id}
+              handleUpdateCartQty={handleUpdateCartQty}
+              handleRemoveFromCart={handleRemoveFromCart}
             />
           )
         })}
       </div>
       <div className="subtotal">
         <h4>Subtotal</h4>
-        <h4>${subtotal.toFixed(2)}</h4>
+        <h4>{cartProducts.subtotal.formatted_with_symbol}</h4>
       </div>
-      <button>Checkout</button>
+      <Link to="/Checkout">
+        <button>Checkout</button>
+      </Link>
     </div>
   )
 }
