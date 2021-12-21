@@ -15,7 +15,7 @@ const Card = ({ product, onAddToCart }) => {
             <h3 className="card-price">
               {product.price.formatted_with_symbol}
             </h3>
-            <button onClick={() => onAddToCart(product.id, 1)}>Buy</button>
+            <button onClick={() => onAddToCart(product.id, 1)}>Add</button>
           </div>
         </div>
       </div>

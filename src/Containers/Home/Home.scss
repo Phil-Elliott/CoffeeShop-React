@@ -294,7 +294,7 @@ $black-color: #1f2021;
       }
     }
     .review {
-      border: $dark-color solid 3px;
+      background-color: rgba(255, 255, 255, 0.3);
       box-shadow: $box-shadow;
       height: 36vh;
       width: 55vw;

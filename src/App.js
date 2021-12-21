@@ -14,6 +14,8 @@ import Shop from "./Containers/Shop/Shop"
 const App = () => {
   const [products, setProducts] = useState([])
   const [cartProducts, setCartProducts] = useState({})
+  const [order, setOrder] = useState({})
+  const [errorMessage, setErrorMessage] = useState("")
 
   // Fetches products from commerce.js
   const fetchProducts = async () => {
@@ -30,7 +32,7 @@ const App = () => {
   const handleAddToCart = async (productId, quantity) => {
     const response = await commerce.cart.add(productId, quantity)
 
-    setCartProducts(response.cartProducts)
+    setCartProducts(response.cart)
   }
 
   // Used to update the quantity of the cart
@@ -45,6 +47,27 @@ const App = () => {
     const { cart } = await commerce.cart.remove(productId)
 
     setCartProducts(cart)
+  }
+
+  const refreshCart = async () => {
+    const newCart = await commerce.cart.refresh()
+
+    setCartProducts(newCart)
+  }
+
+  const handleCaptureCheckout = async (checkoutTokenId, newOrder) => {
+    try {
+      const incomingOrder = await commerce.checkout.capture(
+        checkoutTokenId,
+        newOrder
+      )
+
+      setOrder(incomingOrder)
+
+      refreshCart()
+    } catch (error) {
+      setErrorMessage(error.data.error.message)
+    }
   }
 
   // Fetces all data on mount
@@ -77,7 +100,18 @@ const App = () => {
               />
             }
           />
-          <Route exact path="/Checkout" element={<Checkout />} />
+          <Route
+            exact
+            path="/Checkout"
+            element={
+              <Checkout
+                cartProducts={cartProducts}
+                order={order}
+                onCaptureCheckout={handleCaptureCheckout}
+                error={errorMessage}
+              />
+            }
+          />
         </Routes>
         <Footer />
       </div>

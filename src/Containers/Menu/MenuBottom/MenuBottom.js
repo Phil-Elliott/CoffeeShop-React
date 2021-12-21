@@ -1,8 +1,49 @@
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 import ItemsMenu from "./ItemsMenu"
 
 const MenuBottom = () => {
-  const [list, setList] = useState([])
+  const [list, setList] = useState([
+    {
+      item: "Home Brew",
+      price: "$2.50",
+      description: "Our famous home brewed coffee",
+    },
+    {
+      item: "Drip Coffee",
+      price: "$3.00",
+      description: "Hot coffee made by drip",
+    },
+    {
+      item: "Expresson Brew",
+      price: "$2.80",
+      description: "A drink to get you going",
+    },
+    {
+      item: "Americano",
+      price: "$2.50",
+      description: "You can't go wrong with this classic",
+    },
+    {
+      item: "Latte",
+      price: "$3.75",
+      description: "Perfect for any day",
+    },
+    {
+      item: "Cappuccino ",
+      price: "$3.50",
+      description: "Strong and foamy",
+    },
+    {
+      item: "Iced Coffee",
+      price: "$2.75",
+      description: "Great choice for a hot day",
+    },
+    {
+      item: "Frapacino",
+      price: "$4.00",
+      description: "if you are looking for something cold and sweet",
+    },
+  ])
   const [active, setActive] = useState("active1")
 
   //These are the arrays for the menu
@@ -132,11 +173,6 @@ const MenuBottom = () => {
   const changeActive = (name) => {
     setActive(name)
   }
-
-  //Start the page with the coffee menu display
-  useEffect(() => {
-    changeList("coffee")
-  }, [])
 
   return (
     <div className="bottom-menu-container" id="menu">

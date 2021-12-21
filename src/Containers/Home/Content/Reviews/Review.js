@@ -5,15 +5,15 @@ const Review = ({ text, user, changeReviewRight, changeReviewLeft }) => {
   return (
     <div>
       <section id="reviews">
-        <div class="slider">
+        <div className="slider">
           <FaAngleLeft
             className="clickers"
             style={{ paddingRight: ".5rem" }}
             onClick={changeReviewLeft}
           />
-          <div class="review">
+          <div className="review">
             <p>{text}</p>
-            <div class="user">
+            <div className="user">
               <FaUser style={{ margin: "auto 0", paddingRight: "1rem" }} />
               <h5>{user}</h5>
             </div>

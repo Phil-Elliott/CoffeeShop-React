@@ -2,10 +2,9 @@ import React from "react"
 import { FaTimes, FaPlus, FaMinus } from "react-icons/fa"
 
 const CartItem = ({ item, handleUpdateCartQty, handleRemoveFromCart }) => {
-  console.log(item)
   return (
     <div className="cart-item">
-      <div cart-left>
+      <div>
         <FaTimes
           className="cart-icons"
           onClick={() => handleRemoveFromCart(item.id)}
