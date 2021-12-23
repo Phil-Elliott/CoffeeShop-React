@@ -15,7 +15,7 @@ $green-color: #9caf88;
     box-shadow: $box-shadow;
 
     .event-header {
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
   }
 
@@ -74,5 +74,44 @@ $green-color: #9caf88;
         }
       }
     }
+  }
+}
+
+.events-par {
+  font-size: 22px;
+}
+
+@media only screen and (max-width: 850px) {
+  .eventsContainer {
+    line-height: 28px;
+    padding-top: 10rem;
+
+    .events-bottom {
+      .bottom-events {
+        grid-template-columns: 1fr;
+        height: 88vh;
+
+        .eventsTopLeft {
+          max-width: 90%;
+        }
+
+        h2 {
+          span {
+            font-size: 1rem;
+            padding: 0.25rem 0.5rem;
+          }
+        }
+
+        .eventsTopRight {
+          .imageContain {
+            height: 45vh;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+  .events-par {
+    font-size: 17px;
   }
 }

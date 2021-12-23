@@ -8,7 +8,6 @@ $brown-color: #6f4e37;
 $green-color: #9caf88;
 
 .shop-container {
-  //color: $brown-color;
   padding: 5rem 0;
 }
 
@@ -122,4 +121,46 @@ $green-color: #9caf88;
 .activeShop {
   color: $brown-color;
   font-weight: bolder;
+}
+
+@media only screen and (max-width: 850px) {
+  .header-container {
+    .header-tittle {
+      font-size: 2rem;
+    }
+  }
+
+  .shop-main {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .shopNav {
+    border-right: none;
+
+    p {
+      cursor: pointer;
+      font-size: 0.7rem;
+      padding: 0.25rem 0;
+    }
+  }
+
+  .item-cards {
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+
+    .item-card {
+      .card-top {
+        height: 40vh;
+
+        .item-img-container {
+          img {
+            height: 25vh;
+          }
+        }
+      }
+      .card-bottom {
+        height: 22vh;
+      }
+    }
+  }
 }

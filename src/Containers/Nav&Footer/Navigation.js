@@ -67,7 +67,7 @@ const Navigation = ({ totalItems }) => {
           <Link onClick={() => changeActive("active5")} to="/Cart">
             <ShoppingBasket className="shopping-icon" />
           </Link>
-          <p>{totalItems}</p>
+          <p className="badge">{totalItems}</p>
         </div>
       </nav>
     </div>

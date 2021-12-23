@@ -66,6 +66,7 @@ nav {
   }
   .nav-right {
     display: flex;
+    z-index: 1000 !important;
 
     .shopping-icon {
       border-radius: 50px;
@@ -74,13 +75,12 @@ nav {
       padding: 0.25rem;
       margin-left: 1rem;
       margin-bottom: 0rem;
-      z-index: 100;
 
       &:hover {
         opacity: 0.8;
       }
     }
-    p {
+    .badge {
       background-color: $green-color;
       border-radius: 50px;
       color: white;
@@ -167,33 +167,55 @@ a {
 
 @media only screen and (max-width: 850px) {
   nav {
+    display: block;
     padding: 0.25rem 1rem;
+
+    .nav-left {
+      height: 5rem;
+      h1 {
+        top: 0.25rem;
+        margin: 1.5rem auto;
+      }
+    }
+
+    li {
+      padding: 0.75rem 0;
+      margin: 0 auto;
+    }
   }
 
   .toggle-button {
     display: flex;
-    top: 2.25rem;
-    right: 3.5rem;
+    top: 2rem;
+    left: 1rem;
   }
 
   .nav-nav {
     background-color: $light-color;
     display: none !important;
     flex-direction: column;
-    align-items: center;
-    padding-top: 0rem;
-    padding-bottom: 20px;
-    width: 100%;
+    font-size: 1.25rem;
+    width: 50%;
+    padding-left: 5rem;
+    margin: 0 auto;
   }
 
   .active-nav {
     display: flex !important;
   }
 
-  .shopping-icon {
-    display: none !important;
-  }
   .badge {
-    display: none !important;
+    padding: 2px 7px !important;
+    right: 0.6rem !important;
+  }
+  .footer {
+    display: none;
+  }
+  .shopping-icon {
+    margin-left: 0rem;
+    margin-bottom: 0rem;
+    position: absolute;
+    right: 1rem;
+    top: 1.5rem;
   }
 }

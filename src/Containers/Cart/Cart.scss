@@ -79,3 +79,56 @@ $green-color: #9caf88;
   font-size: 0.9rem;
   opacity: 0.8;
 }
+
+@media only screen and (max-width: 850px) {
+  .cart-container {
+    padding: 7rem 0;
+    margin-bottom: 0rem;
+
+    .cart-headers {
+      display: flex;
+      margin-left: 2.3rem;
+
+      p {
+        padding: 0 1.1rem;
+      }
+    }
+    .cart-item {
+      div {
+        display: flex;
+        align-items: center;
+        padding-right: 0rem;
+
+        img {
+          display: none;
+        }
+      }
+      .quantity {
+        display: flex;
+        font-size: 1.25rem;
+        margin: 0 auto;
+        padding-right: 0.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+        padding: 0 0.5rem;
+      }
+    }
+    .subtotal {
+      margin-top: 1rem;
+      padding-right: 0rem;
+
+      h4 {
+        padding-left: 1.5rem;
+      }
+    }
+    h5 {
+      margin: 0.5rem 0rem;
+    }
+  }
+
+  .cart-icons {
+    margin-right: 0.5rem;
+  }
+}
