@@ -1,17 +1,20 @@
 $box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
   rgba(17, 17, 26, 0.1) 0px 0px 8px;
-$dark-color: #5d5d5f;
-$med-color: #dbdbdb;
-$light-color: #dbdbdb;
-$black-color: #1f2021;
+$dark-color: #051040;
+$med-color: #f8fbfe;
+$light-color: #f8fbfe;
+$black-color: #051040;
+$brown-color: #6f4e37;
+$green-color: #9caf88;
 
 .shop-container {
+  //color: $brown-color;
   padding: 5rem 0;
 }
 
 .header-container {
   .header-tittle {
-    border-bottom: 1.5px solid $dark-color;
+    border-bottom: 2px solid $brown-color;
     font-size: 3rem;
     margin-bottom: 0;
     padding: 1rem 0;
@@ -26,7 +29,7 @@ $black-color: #1f2021;
 }
 
 .shopNav {
-  border-right: $dark-color 1.5px solid;
+  border-right: $brown-color 2px solid;
   width: 75%;
 
   p {
@@ -47,7 +50,7 @@ $black-color: #1f2021;
   grid-gap: 60px;
 
   .item-card {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: white;
     box-shadow: $box-shadow;
     width: 100%;
     transition: transform 0.5s;
@@ -75,38 +78,38 @@ $black-color: #1f2021;
       }
     }
     .card-bottom {
-      height: 20.5vh;
+      color: $brown-color;
+      height: 18vh;
       width: 100%;
       padding: 5px;
 
       h3 {
         margin: 0 0.75rem;
-
         text-align: left;
       }
       .card-description {
-        border-top: 1px solid rgba(0, 0, 0, 0.2);
+        border-top: 2px solid $brown-color;
         font-size: 1.25rem;
         padding: 0.75rem 0;
       }
 
       .buy-item {
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
         margin-top: 0.5rem;
         .card-price {
           font-size: 1rem;
           opacity: 0.7;
+          padding-top: 8px;
         }
-        button {
-          background-color: $dark-color;
-          border-radius: 3px;
-          box-shadow: $box-shadow;
+        .add-basket {
+          background-color: $green-color;
+          border-radius: 30px;
           color: white;
           cursor: pointer;
-          font-size: 1.05rem;
-          margin: 1rem 0.5rem;
-          padding: 0.25rem 2rem;
+          font-size: 2rem;
+          margin-right: 0.8rem;
+          padding: 0.5rem;
 
           &:hover {
             opacity: 0.85;
@@ -117,5 +120,6 @@ $black-color: #1f2021;
   }
 }
 .activeShop {
+  color: $brown-color;
   font-weight: bolder;
 }

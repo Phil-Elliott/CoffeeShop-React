@@ -1,9 +1,11 @@
 $box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
   rgba(17, 17, 26, 0.1) 0px 0px 8px;
-$dark-color: #5d5d5f;
-$med-color: #dbdbdb;
-$light-color: #dbdbdb;
+$dark-color: #748c74;
+$med-color: #f8fbfe;
+$light-color: #f8fbfe;
 $black-color: #1f2021;
+$brown-color: #6f4e37;
+$green-color: #9caf88;
 
 .menu-container {
   padding-top: 11rem;
@@ -12,7 +14,7 @@ $black-color: #1f2021;
 
 /* Start of the top section of the menu container*/
 .topMenuContainer {
-  background-color: $dark-color;
+  background-color: $green-color;
   border-radius: 3px;
   box-shadow: $box-shadow;
   color: white;
@@ -32,7 +34,7 @@ $black-color: #1f2021;
     }
 
     p {
-      padding-top: 1rem;
+      padding-top: 0rem;
       text-indent: 30px;
     }
     .buttons {
@@ -41,12 +43,12 @@ $black-color: #1f2021;
 
       .button {
         padding-right: 2rem;
-        transform: skew(-10deg);
+        //transform: skew(-10deg);
 
         button {
-          background-color: $light-color;
-          border: 1px solid $light-color;
-          border-radius: 5px;
+          background-color: $brown-color;
+          border: 1px solid $brown-color;
+          border-radius: 50px;
           box-shadow: $box-shadow;
           cursor: pointer;
           font-size: 1.25rem;
@@ -73,7 +75,7 @@ $black-color: #1f2021;
 
 /* Start of the bottom section of the menu container*/
 .bottom-menu-container {
-  background-color: $dark-color;
+  background-color: $green-color;
   box-shadow: $box-shadow;
   border-radius: 3px;
   color: white;
@@ -84,9 +86,10 @@ $black-color: #1f2021;
     text-align: center;
 
     h1 {
-      background-color: $light-color;
-      box-shadow: $box-shadow;
-      color: black;
+      //background-color: brown;
+      //box-shadow: $box-shadow;
+      color: white;
+      font-size: 2.75rem;
       font-weight: bolder;
       margin: 0 auto;
       opacity: 90%;
@@ -116,11 +119,11 @@ $black-color: #1f2021;
         }
       }
       .active {
-        background-color: $light-color;
-        border: 1px solid $light-color;
-        border-radius: 5px;
+        background-color: $brown-color;
+        //border: 1px solid $light-color;
+        border-radius: 50px;
         box-shadow: $box-shadow;
-        color: black;
+        color: white;
         cursor: pointer;
         padding: 0.5rem 1rem;
 

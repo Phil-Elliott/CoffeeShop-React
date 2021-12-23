@@ -1,4 +1,5 @@
 import React from "react"
+import { ShoppingBasket } from "@mui/icons-material"
 
 const Card = ({ product, onAddToCart }) => {
   return (
@@ -15,7 +16,10 @@ const Card = ({ product, onAddToCart }) => {
             <h3 className="card-price">
               {product.price.formatted_with_symbol}
             </h3>
-            <button onClick={() => onAddToCart(product.id, 1)}>Add</button>
+            <ShoppingBasket
+              className="add-basket"
+              onClick={() => onAddToCart(product.id, 1)}
+            />
           </div>
         </div>
       </div>

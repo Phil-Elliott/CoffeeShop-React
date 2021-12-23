@@ -1,13 +1,15 @@
 $box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
   rgba(17, 17, 26, 0.1) 0px 0px 8px;
-$dark-color: #5d5d5f;
-$med-color: #dbdbdb;
-$light-color: #dbdbdb;
+$dark-color: #9f0e0e;
+$med-color: #f8fbfe;
+$light-color: #f8fbfe;
 $black-color: #1f2021;
+$brown-color: #6f4e37;
+$green-color: #9caf88;
 
 /* start of the home section*/
 #top {
-  padding: 10rem 0 5rem;
+  padding: 11rem 0 5rem;
 
   .top-container {
     display: grid;
@@ -51,12 +53,12 @@ $black-color: #1f2021;
 
         .button {
           padding-right: 2rem;
-          transform: skew(-10deg);
+          //transform: skew(-10deg);
 
           button {
-            background-color: $dark-color;
+            background-color: $green-color;
             border: 1px solid $light-color;
-            border-radius: 5px;
+            border-radius: 50px;
             box-shadow: $box-shadow;
             cursor: pointer;
             font-size: 1.25rem;
@@ -69,14 +71,7 @@ $black-color: #1f2021;
         }
       }
       .reviews-link {
-        cursor: pointer;
-        font-size: 1.25rem;
-        font-style: italic;
-        padding: 0.5rem 1rem;
-
-        &:hover {
-          opacity: 0.8;
-        }
+        color: white;
       }
     }
   }
@@ -84,7 +79,7 @@ $black-color: #1f2021;
 /* end of the home section */
 /* start of the about section*/
 #about {
-  background-color: $dark-color;
+  background-color: $brown-color;
   color: white;
 
   /* start of top part of about section*/
@@ -92,12 +87,12 @@ $black-color: #1f2021;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 0rem;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
 
     .left-about {
-      font-size: 2rem;
+      font-size: 1.75rem;
       padding-top: 1rem;
-      margin: 4rem auto 0 auto;
+      margin: 2rem auto 0 auto;
       text-align: left;
       width: 80%;
 
@@ -107,7 +102,7 @@ $black-color: #1f2021;
       }
 
       p {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         line-height: 40px;
         text-indent: 40px;
       }
@@ -115,9 +110,9 @@ $black-color: #1f2021;
     .right-about > img {
       box-shadow: $box-shadow;
       display: block;
-      height: 50vh;
+      height: 40vh;
       object-fit: cover;
-      margin: 4rem auto 0 auto;
+      margin: 2rem auto 0 auto;
       width: 75%;
     }
     /* end of top part of about section*/
@@ -125,30 +120,32 @@ $black-color: #1f2021;
   /* start of bottom part of about section*/
   .bottom-about-container {
     background-color: $med-color;
-    padding-top: 3rem;
-    h3 {
-      color: black;
-      font-size: 3rem;
-      margin: 0 0 3rem;
-      text-align: center;
-    }
+    padding-top: 2rem;
+
     .pics {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 60px;
-      height: 60vh;
+      height: 52vh;
       margin: 0 auto;
       text-align: center;
       width: 87%;
+
+      h5 {
+        color: $green-color;
+        font-size: 1.5rem;
+        margin: 1rem 0;
+      }
 
       .left-pic {
         background-image: url("https://images.unsplash.com/photo-1545665206-b3e63670666e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        border-radius: 500px;
         box-shadow: $box-shadow;
         display: block;
-        height: 22rem;
+        height: 18rem;
         margin: 0 auto;
         transition: transform 1s;
         width: 100%;
@@ -167,9 +164,10 @@ $black-color: #1f2021;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        border-radius: 500px;
         box-shadow: $box-shadow;
         display: block;
-        height: 22rem;
+        height: 18rem;
         margin: 0 auto;
         transition: transform 1s;
         width: 100%;
@@ -188,9 +186,10 @@ $black-color: #1f2021;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        border-radius: 500px;
         box-shadow: $box-shadow;
         display: block;
-        height: 22rem;
+        height: 18rem;
         margin: 0 auto;
         transition: transform 1s;
         width: 100%;
@@ -208,11 +207,6 @@ $black-color: #1f2021;
         opacity: 0;
         padding: 5rem 1rem;
 
-        h5 {
-          font-size: 2rem;
-          margin: 0;
-          padding-bottom: 10px;
-        }
         p {
           font-size: 1.25rem;
           margin: 0 auto;
@@ -227,13 +221,17 @@ $black-color: #1f2021;
     }
   }
 }
+
+.img-headers {
+  display: flex;
+}
 /* end of the about section */
 
 /* start of the area section*/
 #area {
-  background-color: $dark-color;
+  background-color: $brown-color;
   color: white;
-  padding: 5rem 0;
+  padding: 2rem 0;
 
   .area-container {
     display: grid;
@@ -244,7 +242,7 @@ $black-color: #1f2021;
       img {
         box-shadow: $box-shadow;
         display: block;
-        height: 60vh;
+        height: 52vh;
         object-fit: cover;
         margin-left: auto;
         margin-right: auto;
@@ -252,19 +250,20 @@ $black-color: #1f2021;
       }
     }
     .right-area {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       margin: 0 auto;
       text-align: left;
       width: 75%;
     }
     h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
       line-height: 80px;
-      margin: 1rem 0 1rem;
+      margin: 0;
       text-align: center;
     }
     p {
       line-height: 40px;
+      margin: 0.5rem 0;
       text-indent: 2rem;
     }
   }
@@ -294,12 +293,10 @@ $black-color: #1f2021;
       }
     }
     .review {
-      background-color: rgba(255, 255, 255, 0.3);
+      background-color: white;
       box-shadow: $box-shadow;
-      height: 36vh;
+      height: 38vh;
       width: 55vw;
-      //background-color: $dark-color;
-      //color: white;
       padding: 2rem 2rem 0;
       border-radius: 2px;
       margin: 0 auto;
@@ -315,10 +312,11 @@ $black-color: #1f2021;
       .user {
         display: flex;
         justify-content: flex-end;
-        padding: 2rem 5rem 1rem;
+        padding: 2rem 1.5rem 1rem;
 
         h5 {
           font-style: normal;
+          font-weight: 500;
           margin: 0;
           text-indent: 0px;
         }
@@ -327,141 +325,3 @@ $black-color: #1f2021;
   }
 }
 /* end of the reviews section */
-
-/* Make the website responsive */
-@media only screen and (max-width: 1300px) {
-  .container {
-    max-width: 90%;
-  }
-
-  nav {
-    padding: 0 3rem;
-  }
-
-  .menu {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 5rem;
-  }
-
-  .sizes > p {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  nav {
-    position: relative;
-    display: inherit;
-    font-size: 1.5rem;
-    padding: 0;
-  }
-
-  .nav-left {
-    display: flex;
-    justify-content: center;
-    background-color: #5d5d5f;
-    color: #dbdbdb;
-  }
-
-  .nav-icon {
-    margin: auto 0;
-    padding-right: 1rem;
-  }
-
-  .coffee-icon {
-    font-size: 2rem;
-    padding-bottom: 0.5rem;
-  }
-
-  .nav-middle > ul {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-  }
-
-  .nav-middle > ul > li {
-    padding: 0 1rem;
-  }
-
-  .active {
-    font-weight: bold;
-  }
-
-  .nav-right {
-    display: flex;
-    justify-content: center;
-    background-color: #5d5d5f;
-    color: #dbdbdb;
-  }
-
-  #home {
-    padding: 0 0 3rem;
-  }
-
-  .home-container {
-    grid-template-columns: 1fr;
-    grid-gap: 0rem;
-  }
-
-  .left-home > img {
-    display: none;
-  }
-
-  .top-about-container {
-    grid-template-columns: 1fr;
-    grid-gap: 0rem;
-  }
-
-  .right-about > img {
-    display: none;
-  }
-
-  .pics {
-    grid-template-columns: 1fr;
-    text-align: center;
-    grid-gap: 2rem;
-  }
-
-  .menu {
-    grid-template-columns: 1fr;
-    grid-gap: 5rem;
-  }
-
-  .area-container {
-    grid-template-columns: 1fr;
-    grid-gap: 0rem;
-  }
-
-  .left-area > img {
-    display: none;
-  }
-
-  .review {
-    width: 90%;
-    background-color: #5d5d5f;
-    color: #dbdbdb;
-    padding: 2rem 2rem 0;
-    border-radius: 5px;
-    margin: 0 auto;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  nav {
-    font-size: 1rem;
-  }
-
-  .sizes > p {
-    display: inherit;
-  }
-}
-
-/*
-$light-color: #8a624a;
-$darker-color: #2d0f10;
-$dark-color: #3b271d;
-$med-color: #4a2c2a;
-$black-color: #1f2021;
-$tan-color: #fffaf1;
-
-*/

@@ -28,9 +28,13 @@ const Top = () => {
                   </a>
                 </button>
               </div>
-              <a className="reviews-link" href="#reviews">
-                Reviews
-              </a>
+              <div className="button">
+                <button>
+                  <a className="reviews-link" href="#reviews">
+                    Reviews
+                  </a>
+                </button>
+              </div>
             </div>
           </div>
         </div>

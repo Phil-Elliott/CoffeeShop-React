@@ -29,7 +29,7 @@ const Cart = ({ cartProducts, handleUpdateCartQty, handleRemoveFromCart }) => {
         <h4>{cartProducts.subtotal.formatted_with_symbol}</h4>
       </div>
       <Link to="/Checkout">
-        <button>Checkout</button>
+        <h5>Checkout</h5>
       </Link>
     </div>
   )

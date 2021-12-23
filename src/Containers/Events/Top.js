@@ -8,11 +8,16 @@ const Top = () => {
           alt="Coffee"
         />
       </div>
-      <div className="menuTopLeft" style={{ fontSize: "1.5rem" }}>
-        <h2 style={{ margin: "0" }}>
-          <span className="event-header">Events</span>
+      <div className="menuTopLeft">
+        <h2 style={{ textAlign: "center" }}>
+          <span
+            className="event-header"
+            style={{ textAlign: "center", fontSize: "42px" }}
+          >
+            Events
+          </span>
         </h2>
-        <p>
+        <p style={{ fontSize: "22px" }}>
           We have a different event every day of the week. Come and enjoy
           yourself with one of our delicous coffees. Tickets do go fast, so be
           sure to reserve a seat.

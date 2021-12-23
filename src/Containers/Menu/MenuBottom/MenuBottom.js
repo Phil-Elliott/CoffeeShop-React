@@ -177,7 +177,7 @@ const MenuBottom = () => {
   return (
     <div className="bottom-menu-container" id="menu">
       <div className="menuHeading">
-        <h1>Our Menu</h1>
+        <h1>Menu</h1>
         <ul>
           <li onClick={() => changeList("coffee")}>
             <span

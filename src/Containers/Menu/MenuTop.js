@@ -10,7 +10,7 @@ const MenuTop = () => {
         <div className="buttons">
           <div className="button">
             <button>
-              <a style={{ color: "#1f2021" }} href="#menu">
+              <a style={{ color: "white" }} href="#menu">
                 Menu
               </a>
             </button>

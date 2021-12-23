@@ -21,33 +21,39 @@ const About = () => {
           </div>
           <div className="bottom-about-container">
             <div className="container">
-              <h3>Our Brew Methods</h3>
               <div className="pics">
-                <div className="left-pic">
-                  <div className="writing-container">
-                    <h5>Traditional</h5>
-                    <p>
-                      Sometimes the best results come from the simplest actions.
-                    </p>
+                <div className="left-container">
+                  <div className="left-pic">
+                    <div className="writing-container">
+                      <p>
+                        Sometimes the best results come from the simplest
+                        actions.
+                      </p>
+                    </div>
                   </div>
+                  <h5>Traditional</h5>
                 </div>
-                <div className="middle-pic">
-                  <div className="writing-container">
-                    <h5>Drip</h5>
-                    <p>
-                      Perfect for someone who wants more caffeine and a vibrant
-                      taste.
-                    </p>
+                <div className="middle-container">
+                  <div className="middle-pic">
+                    <div className="writing-container">
+                      <p>
+                        Perfect for someone who wants more caffeine and a
+                        vibrant taste.
+                      </p>
+                    </div>
                   </div>
+                  <h5>Drip</h5>
                 </div>
-                <div className="right-pic">
-                  <div className="writing-container">
-                    <h5>Cold Brew</h5>
-                    <p>
-                      Great for a hot day and for those who want something
-                      sweeter.
-                    </p>
+                <div className="right-container">
+                  <div className="right-pic">
+                    <div className="writing-container">
+                      <p>
+                        Great for a hot day and for those who want something
+                        sweeter.
+                      </p>
+                    </div>
                   </div>
+                  <h5>Cold Brew</h5>
                 </div>
               </div>
             </div>

@@ -29,7 +29,7 @@ const Reviews = () => {
       user: "Emily",
     },
     {
-      text: "Excellent coffee shop. Will definitely be going back soon. The staff were very helpful and fast",
+      text: "Excellent coffee shop. Will definitely be going back soon. The staff were very helpful and fast.",
       user: "Sam",
     },
     {
@@ -41,7 +41,7 @@ const Reviews = () => {
       user: "Sierra",
     },
     {
-      text: "Go for the coffee, stay for the vibe. It is such a chill place and everything is of the highest quality",
+      text: "Go for the coffee, stay for the vibe. It is such a chill place and everything is of the highest quality.",
       user: "Todd",
     },
   ]

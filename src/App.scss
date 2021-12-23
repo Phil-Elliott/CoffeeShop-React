@@ -1,10 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&display=swap");
 $box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
   rgba(17, 17, 26, 0.1) 0px 0px 8px;
 $dark-color: #5d5d5f;
-$med-color: #dbdbdb;
-$light-color: #dbdbdb;
-$black-color: #1f2021;
+$med-color: #f8fbfe;
+$light-color: #f8fbfe;
+$black-color: black;
+$brown-color: #6f4e37;
+$green-color: #9caf88;
 
 * {
   box-sizing: border-box;
@@ -29,7 +32,7 @@ body {
 nav {
   background-color: $light-color;
   box-shadow: $box-shadow;
-  color: $black-color;
+  color: black;
   font-size: 1.2rem;
   display: flex;
   justify-content: space-between;
@@ -42,12 +45,7 @@ nav {
 
   .nav-left {
     display: flex;
-
-    .coffee-icon {
-      font-size: 2.5rem;
-      padding: 0 0.75rem 0.3rem 0;
-      margin: auto;
-    }
+    font-family: "Great Vibes", cursive;
   }
   .nav-middle ul {
     display: flex;
@@ -76,10 +74,22 @@ nav {
       padding: 0.25rem;
       margin-left: 1rem;
       margin-bottom: 0rem;
+      z-index: 100;
 
       &:hover {
-        background-color: rgba(255, 255, 255, 0.5);
+        opacity: 0.8;
       }
+    }
+    p {
+      background-color: $green-color;
+      border-radius: 50px;
+      color: white;
+      font-size: 12px;
+      padding: 4px 9px;
+      position: absolute;
+      right: 6.65rem;
+      top: 0.25rem;
+      z-index: -5;
     }
   }
 }
@@ -89,6 +99,30 @@ a {
   text-decoration: none;
 }
 
+.toggle-button {
+  position: absolute;
+  background-color: $light-color;
+  border: none;
+  cursor: pointer;
+  top: 2.8rem;
+  right: 15rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 50px;
+  height: 25px;
+
+  span {
+    height: 3px;
+    background-color: black;
+    border-radius: 10px;
+    width: 100%;
+  }
+}
+.activeNav {
+  color: purple;
+}
 /* end of the nav bar */
 
 /* Start of Footer Section */
@@ -130,3 +164,36 @@ a {
 }
 
 /* End of Footer Section */
+
+@media only screen and (max-width: 850px) {
+  nav {
+    padding: 0.25rem 1rem;
+  }
+
+  .toggle-button {
+    display: flex;
+    top: 2.25rem;
+    right: 3.5rem;
+  }
+
+  .nav-nav {
+    background-color: $light-color;
+    display: none !important;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0rem;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+
+  .active-nav {
+    display: flex !important;
+  }
+
+  .shopping-icon {
+    display: none !important;
+  }
+  .badge {
+    display: none !important;
+  }
+}

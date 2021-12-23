@@ -4,6 +4,8 @@ $dark-color: #5d5d5f;
 $med-color: #dbdbdb;
 $light-color: #dbdbdb;
 $black-color: #1f2021;
+$brown-color: #6f4e37;
+$green-color: #9caf88;
 
 .cart-container {
   padding: 8rem 0;
@@ -55,9 +57,8 @@ $black-color: #1f2021;
       padding-left: 1.5rem;
     }
   }
-  button {
-    background-color: $black-color;
-    border-color: $black-color;
+  h5 {
+    background-color: $green-color;
     border-radius: 30px;
     box-shadow: $box-shadow;
     color: white;
