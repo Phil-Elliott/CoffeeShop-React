@@ -86,8 +86,6 @@ $green-color: #9caf88;
     text-align: center;
 
     h1 {
-      //background-color: brown;
-      //box-shadow: $box-shadow;
       color: white;
       font-size: 2.75rem;
       font-weight: bolder;
@@ -157,54 +155,148 @@ $green-color: #9caf88;
   }
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1350px) {
   .menu-container {
-    padding-top: 9.5rem;
+    padding-top: 10rem;
   }
-  /* Start of the top section of the menu container*/
+
   .topMenuContainer {
-    grid-template-columns: 1fr;
-    height: 65vh;
+    height: 60vh;
 
-    .menuTopLeft {
-      font-size: 1rem;
-      max-width: 90%;
-      margin: 0rem auto 0;
-
-      h1 {
-        text-align: center;
-      }
-
-      .buttons {
-        .button {
-          button {
-            font-size: 1rem;
-          }
-        }
-      }
-    }
-    .menuTopRight {
-      .imageContain {
-        display: none;
-      }
+    h1 {
+      margin-top: 0;
     }
   }
+
+  .imageContain {
+    height: 60vh !important;
+  }
+
+  .menuTopLeft {
+    font-size: 0.9rem !important;
+  }
+
+  .button {
+    button {
+      font-size: 0.9rem !important;
+    }
+  }
+
+  /* End of the top section of the menu container*/
+
+  /* Start of the bottom section of the menu container*/
+
+  .dotLine {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .menu-container {
+    padding-top: 9rem;
+  }
+
+  .topMenuContainer {
+    h1 {
+      font-size: 1.6rem;
+    }
+  }
+
+  .menuTopLeft {
+    font-size: 0.8rem !important;
+  }
+
+  .button {
+    button {
+      font-size: 0.8rem !important;
+    }
+  }
+
   /* End of the top section of the menu container*/
 
   /* Start of the bottom section of the menu container*/
   .bottom-menu-container {
-    padding: 1rem;
-    margin-top: 10rem;
+    margin-top: 8rem;
 
     .menuHeading {
       h1 {
         font-size: 2rem;
-        margin: 0;
       }
 
       ul {
         max-width: 90%;
         padding: 1rem 0;
+      }
+    }
+    .item-container {
+      max-width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .topMenuContainer {
+    h1 {
+      font-size: 1rem;
+    }
+  }
+
+  .menuTopLeft {
+    font-size: 0.8rem !important;
+  }
+
+  .button {
+    button {
+      font-size: 0.8rem !important;
+    }
+  }
+
+  /* End of the top section of the menu container*/
+}
+
+@media only screen and (max-width: 500px) {
+  .menu-container {
+    padding-top: 1rem;
+  }
+  /* Start of the top section of the menu container*/
+  .topMenuContainer {
+    display: none;
+  }
+  /* End of the top section of the menu container*/
+
+  /* Start of the bottom section of the menu container*/
+
+  .bottom-menu-container {
+    padding: 1rem;
+    margin-top: 7rem;
+
+    .menuHeading {
+      h1 {
+        padding: 0;
+      }
+
+      ul {
+        li {
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .menu-container {
+    padding-top: 7.5rem;
+  }
+
+  /* Start of the bottom section of the menu container*/
+  .bottom-menu-container {
+    padding: 1rem;
+    margin-top: 0rem;
+
+    .menuHeading {
+      ul {
+        max-width: 100%;
 
         li {
           font-size: 0.75rem;
@@ -213,12 +305,35 @@ $green-color: #9caf88;
     }
     .item-container {
       max-width: 100%;
+      font-size: 0.75rem;
+    }
+  }
+}
 
-      .itemTop {
-        .dotLine {
-          display: none;
+@media only screen and (max-width: 300px) {
+  /* Start of the bottom section of the menu container*/
+  .bottom-menu-container {
+    padding-bottom: 1rem;
+
+    .menuHeading {
+      h1 {
+        font-size: 1.3rem;
+        padding-top: 0.25rem;
+      }
+
+      ul {
+        padding: 1rem 0;
+        justify-content: center;
+
+        li {
+          font-size: 0.45rem;
+          padding: 0 0.35rem;
         }
       }
+    }
+    .item-container {
+      max-width: 90%;
+      font-size: 0.5rem;
     }
   }
 }

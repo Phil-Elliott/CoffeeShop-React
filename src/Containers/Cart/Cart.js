@@ -13,7 +13,7 @@ const Cart = ({ cartProducts, handleUpdateCartQty, handleRemoveFromCart }) => {
         <p>Price</p>
       </div>
       <div className="cart-items">
-        {cartProducts.line_items.map((item) => {
+        {cartProducts.line_items?.map((item) => {
           return (
             <CartItem
               item={item}

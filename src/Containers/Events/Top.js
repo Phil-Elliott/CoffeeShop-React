@@ -9,7 +9,7 @@ const Top = () => {
         />
       </div>
       <div className="menuTopLeft">
-        <h2 style={{ textAlign: "center" }}>
+        <h2 className="top-event-header" style={{ textAlign: "center" }}>
           <span className="event-header">Events</span>
         </h2>
         <p className="events-par">

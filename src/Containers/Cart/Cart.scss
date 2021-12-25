@@ -9,7 +9,7 @@ $green-color: #9caf88;
 
 .cart-container {
   padding: 8rem 0;
-  margin-bottom: 7.8rem;
+  margin-bottom: 9rem;
 
   .cart-headers {
     display: grid;
@@ -80,13 +80,13 @@ $green-color: #9caf88;
   opacity: 0.8;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1000px) {
   .cart-container {
     padding: 7rem 0;
     margin-bottom: 0rem;
 
     .cart-headers {
-      display: flex;
+      display: none;
       margin-left: 2.3rem;
 
       p {

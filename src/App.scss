@@ -165,7 +165,7 @@ a {
 
 /* End of Footer Section */
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1000px) {
   nav {
     display: block;
     padding: 0.25rem 1rem;
@@ -217,5 +217,13 @@ a {
     position: absolute;
     right: 1rem;
     top: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .nav-left {
+    h1 {
+      display: none;
+    }
   }
 }
