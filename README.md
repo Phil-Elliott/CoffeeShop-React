@@ -2,6 +2,8 @@
 
 An interactive and fully responsive website built with React. Provides the user with details about Quick Brew coffee shop. This includes reviews, daily events, and an interactive menu. I also created a shop with Commerce.js and connected it to Stripe for the ability to accept payments.
 
+![QuickB](https://user-images.githubusercontent.com/89685937/147708776-20fda4be-b227-4dbf-9a21-08a66bc6e7c5.gif)
+
 ## How It Works
 
 The website is used for both information and a shop for the Quick Brew coffee shop. The Home page displays information in regards to the coffee shop. At the bottom the user can find some reviews that can be changed with a clicker on the left or the right side of the reviews. The Events page displays the events that take place throughout the week. The Menu page includes an interactive menu that the user can change by clicking on one of the headers. 
