@@ -14,5 +14,7 @@ I built this website on React and used Sass for styling it. I also used Commerce
 
 ## What I learned 
 
-I learned how to design a website and to build it in React. I also learned a lot about e-commerce websites and how they work. Using commerce.js and Stripe made the process very easy. 
+This was my first website build on React and it provided me with a lot of experience as a result. I learned more about the best ways to use hooks and some npm packages that are quite beneficial to use when making a website. My favorite in this project was using the React Router Dom. I learned a lot about making a website that is user friendly.
+
+I also learned a lot about e-commerce websites and how they work. Using commerce.js and Stripe made the process very easy. 
 
