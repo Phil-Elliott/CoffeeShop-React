@@ -20,6 +20,11 @@ const PaymentForm = ({
   shippingData,
   onCaptureCheckout,
 }) => {
+  const options = {
+    // passing the client secret obtained from the server
+    clientSecret: "{{CLIENT_SECRET}}",
+  }
+
   const handleSubmit = async (event, elements, stripe) => {
     event.preventDefault()
 
@@ -34,9 +39,7 @@ const PaymentForm = ({
 
     if (error) {
       console.log("[error]", error)
-      console.log(shippingData)
     } else {
-      console.log(shippingData)
       const orderData = {
         line_items: checkoutToken.live.line_items,
         customer: {
@@ -74,7 +77,7 @@ const PaymentForm = ({
       <Typography variant="h6" gutterBottom style={{ margin: "20px 0" }}>
         Payment method
       </Typography>
-      <Elements stripe={stripePromise}>
+      <Elements stripe={stripePromise} options={options}>
         <ElementsConsumer>
           {({ elements, stripe }) => (
             <form onSubmit={(e) => handleSubmit(e, elements, stripe)}>
