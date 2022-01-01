@@ -20,24 +20,3 @@ const FormInput = ({ name, label, required }) => {
 }
 
 export default FormInput
-
-/*
-render={({ field }) => <TextField {...field} />}
-        name={name}
-        control={control}
-        label={label}
-        fullWidth
-        required={required}
-
-
-        control={control}
-        render={({ field }) => (
-          <TextField
-            fullWidth
-            label={label}
-            name={name}
-            required={required}
-            error={isError}
-          />
-        )}
-*/

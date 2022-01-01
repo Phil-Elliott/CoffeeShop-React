@@ -9,7 +9,9 @@ import { loadStripe } from "@stripe/stripe-js"
 
 import Review from "./Review"
 
-const stripePromise = loadStripe(`${process.env.REACT_APP_STRIPE_PUBLIC_KEY}`)
+const stripePromise = loadStripe(
+  "pk_test_51K8LJGEvR7jgm2oM1NHjnzWR3jl30ENSExLNElCYpYlrNF6saJ92R8exrzGkoC4V8ckQwXWfRYWSSyUvgrBtgBEj00p7QM1bNA"
+)
 
 const PaymentForm = ({
   checkoutToken,
