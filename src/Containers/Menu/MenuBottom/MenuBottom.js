@@ -177,9 +177,9 @@ const MenuBottom = () => {
   return (
     <div className="bottom-menu-container" id="menu">
       <div className="menuHeading">
-        <h1 style={{ color: "white" }}>Menu</h1>
+        <h1>Menu</h1>
         <ul>
-          <li style={{ color: "white" }} onClick={() => changeList("coffee")}>
+          <li onClick={() => changeList("coffee")}>
             <span
               className={active === "active1" ? "active" : "none"}
               onClick={() => changeActive("active1")}
@@ -187,7 +187,7 @@ const MenuBottom = () => {
               Coffee
             </span>
           </li>
-          <li style={{ color: "white" }} onClick={() => changeList("tea")}>
+          <li onClick={() => changeList("tea")}>
             <span
               className={active === "active2" ? "active" : "none"}
               onClick={() => changeActive("active2")}
@@ -195,7 +195,7 @@ const MenuBottom = () => {
               Tea
             </span>
           </li>
-          <li style={{ color: "white" }} onClick={() => changeList("other")}>
+          <li onClick={() => changeList("other")}>
             <span
               className={active === "active3" ? "active" : "none"}
               onClick={() => changeActive("active3")}
@@ -203,7 +203,7 @@ const MenuBottom = () => {
               Other
             </span>
           </li>
-          <li style={{ color: "white" }} onClick={() => changeList("dessert")}>
+          <li onClick={() => changeList("dessert")}>
             <span
               className={active === "active4" ? "active" : "none"}
               onClick={() => changeActive("active4")}
