@@ -7,11 +7,11 @@ const BottomEvents = () => {
       time: "Monday's All Day",
       event: "Strong Coffee Monday's",
       description:
-        "Start your day with any and a free shot of espresson on us. Who said Monday's needed to be bad.",
+        "Start your day with any and a free shot of espresso on us. Who said Monday's needed to be bad.",
       pic: "https://images.unsplash.com/photo-1599579089328-852ca6423ef0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     },
     {
-      time: "Tuesdays's All Day",
+      time: "Tuesday's All Day",
       event: "Charity Day",
       description:
         "Come and drink some coffee and donate to a great cause. We will be donating 10% of all purchases to a charity of your choice.",
@@ -47,7 +47,7 @@ const BottomEvents = () => {
       pic: "https://images.unsplash.com/photo-1542401520-180a59daad21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1877&q=80",
     },
     {
-      time: "Sundays's 2PM - 4PM",
+      time: "Sunday's 2PM - 4PM",
       event: "Dog Days",
       description:
         "Come enjoy a cup of coffee, on our spacious patio, with your dog. Dog owner's get 10% off all day",

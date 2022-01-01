@@ -8,7 +8,7 @@ const About = () => {
               <h2>From Seed to Cup</h2>
               <p>
                 We search for the best quality beans around the world. We then
-                take care of the roasting process on site. This guarentees that
+                take care of the roasting process on site. This guarantees that
                 your coffee is always fresh and of the highest quality.
               </p>
             </div>

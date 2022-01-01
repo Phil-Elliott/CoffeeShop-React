@@ -59,7 +59,7 @@ const MenuBottom = () => {
       description: "Hot coffee made by drip",
     },
     {
-      item: "Expresson Brew",
+      item: "Espresso Brew",
       price: "$2.80",
       description: "A drink to get you going",
     },
@@ -84,7 +84,7 @@ const MenuBottom = () => {
       description: "Great choice for a hot day",
     },
     {
-      item: "Frapacino",
+      item: "Frappuccino",
       price: "$4.00",
       description: "if you are looking for something cold and sweet",
     },

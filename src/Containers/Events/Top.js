@@ -14,7 +14,7 @@ const Top = () => {
         </h2>
         <p className="events-par">
           We have a different event every day of the week. Come and enjoy
-          yourself with one of our delicous coffees. Tickets do go fast, so be
+          yourself with one of our delicious coffees. Tickets do go fast, so be
           sure to reserve a seat.
         </p>
       </div>
