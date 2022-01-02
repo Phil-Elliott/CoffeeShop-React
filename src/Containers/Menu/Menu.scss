@@ -90,7 +90,7 @@ $green-color: #9caf88;
       font-size: 2.75rem;
       font-weight: bolder;
       margin: 0 auto;
-      opacity: 90%;
+      opacity: 0.9;
       padding: 1rem 5rem;
       width: 28vw;
     }
@@ -109,7 +109,7 @@ $green-color: #9caf88;
         display: flex;
         list-style: none;
         margin: 0rem;
-        opacity: 90%;
+        opacity: 0.9;
 
         &:hover {
           cursor: pointer;
@@ -118,7 +118,7 @@ $green-color: #9caf88;
       }
       .active {
         background-color: $brown-color;
-        //border: 1px solid $light-color;
+
         border-radius: 50px;
         box-shadow: $box-shadow;
         color: white;
@@ -148,7 +148,7 @@ $green-color: #9caf88;
     }
     .itemBottom {
       p {
-        opacity: 70%;
+        opacity: 0.7;
         margin-top: 0;
       }
     }
